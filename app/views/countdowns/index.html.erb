@@ -1,0 +1,33 @@
+<h1>Listing countdowns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Link</th>
+      <th>Countdown date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @countdowns.each do |countdown| %>
+      <tr>
+        <td><%= countdown.name %></td>
+        <td><%= countdown.description %></td>
+        <td><%= countdown.link %></td>
+        <td><%= countdown.countdown_date %></td>
+        <td><%= link_to 'Show', countdown %></td>
+        <td><%= link_to 'Edit', edit_countdown_path(countdown) %></td>
+        <td><%= link_to 'Destroy', countdown, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Countdown', new_countdown_path %>

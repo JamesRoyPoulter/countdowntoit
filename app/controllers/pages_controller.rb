@@ -6,5 +6,7 @@ class PagesController < ApplicationController
   end
 
   def landing
+    # retrieve all Bookmarks ordered by descending creation timestamp
+    @countdowns = Countdown.order('created_at desc')
   end
 end
