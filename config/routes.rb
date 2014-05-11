@@ -9,11 +9,15 @@ SociaLoginRails::Application.routes.draw do
   resources :users
   resources :countdowns
 
+  match 'techpeaksdemoday' => 'countdowns#show', :via => [:get], :defaults => {:id => 6}
+
+  root :to => 'countdowns#show', :defaults => {:id => 6}
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root :to => 'pages#landing'
+  # root :to => 'pages#landing'
   ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

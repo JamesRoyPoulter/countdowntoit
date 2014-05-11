@@ -1,0 +1,18 @@
+<%= link_to 'Edit', edit_countdown_path(@countdown) %> |
+<%= link_to 'Back', countdowns_path %>
+
+
+50.63.202.40
+
+
+light green #1ABC9C
+
+concrete #95a5a6
+
+light dark #34495e
+
+dark dark #2C3E50
+
+light red #e74c3c
+
+dark red #c0392b
