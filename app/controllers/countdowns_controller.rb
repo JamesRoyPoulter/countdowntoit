@@ -23,7 +23,7 @@ class CountdownsController < InheritedResources::Base
   private
 
     def countdown_params
-      params.require(:countdown).permit(:name, :description, :countdown_date, :link)
+      params.require(:countdown).permit(:name, :description, :countdown_date, :link, :user_id)
     end
 
      # Use callbacks to share common setup or constraints between actions.

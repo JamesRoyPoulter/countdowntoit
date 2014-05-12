@@ -25,7 +25,7 @@ my_var_one = ()->
 	    hours_span.innerHTML = '<div class="holder"><span class="number">' + hours + '</span>' + '<span class="text">HOURS</span></div>';
 	    minutes_span.innerHTML = '<div class="holder"><span class="number">' + minutes + '</span>' + '<span class="text">MINUTES</span></div>';
 	    secs_span.innerHTML = '<div class="holder"><span class="number">' + seconds + '</span>' + '<span class="text">SECONDS</span></div>';
-	    
+    	$('.number').css('font-size','5em') if days > 2
 	  
 	    # //countdown.innerHTML = days + "d, " + hours + "h, "
 	   # // + minutes + "m, " + seconds + "s";  
@@ -70,9 +70,4 @@ $('#countdown_countdown_date_2i').width(day_width)
 $('#countdown_countdown_date_3i').width(day_width)
 $('#countdown_countdown_date_4i').width(day_width)
 $('#countdown_countdown_date_5i').width(day_width)
-
-
-
-
-
 

@@ -8,16 +8,15 @@
 </head>
 <body>
       <%= yield %>
-
-  <%= link_to content_tag(:i,nil, :class=>"fa fa-clock-o logo_short"), root_url %>
-
   
   <ul class="unstyled account">
     <li><%= link_to content_tag(:i,nil, :class=>"fa fa-plus"), new_countdown_path %></li>
     <% if user_signed_in? %>
     <li><%= link_to content_tag(:i,nil, :class=>"fa fa-user"), current_user %></li>
+    <li><%= link_to content_tag(:i,nil, :class=>"fa fa-clock-o"), root_url %></li>
     <li><%= link_to content_tag(:i,nil, :class=>"fa fa-sign-out"), destroy_user_session_path %></li>
     <% else %>
+    <li><%= link_to content_tag(:i,nil, :class=>"fa fa-clock-o"), root_url %></li>
     <li><%= link_to content_tag(:i,nil, :class=>"fa fa-sign-in"), new_user_session_path %></li>
     <% end %>
   </ul>
