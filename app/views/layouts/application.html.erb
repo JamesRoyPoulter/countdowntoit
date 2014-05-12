@@ -18,7 +18,7 @@
     <li><%= link_to content_tag(:i,nil, :class=>"fa fa-user"), current_user %></li>
     <li><%= link_to content_tag(:i,nil, :class=>"fa fa-sign-out"), destroy_user_session_path %></li>
     <% else %>
-    <li><%= link_to content_tag(:i,nil, :class=>"fa fa-trash-o"), new_user_session_path %></li>
+    <li><%= link_to content_tag(:i,nil, :class=>"fa fa-sign-in"), new_user_session_path %></li>
     <% end %>
   </ul>
 

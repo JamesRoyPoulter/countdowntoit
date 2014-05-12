@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#container {
+
+// COUNTDOWN SHOW PAGE
+#container_show {
 	margin: auto;
 	margin-top: 15%;
 	width: 800px;
@@ -21,10 +23,9 @@
 .top_holder {
 	margin-right: 4em;
 	display: inline-block;
-}
-
-.top_holder:last-child {
+	&:last-child {
 	margin-right: 0em;
+	}
 }
 
 .number {
@@ -49,8 +50,11 @@
 	margin-top: 40px;
 	color: #95a5a6;
 	font-size: 2em;
+	letter-spacing: 2px;
 }
 
+
+// SHOW MEDIA QUERIES
 @media (max-width: 1100px) {
   #container {
     margin-top: 25%;
@@ -87,4 +91,11 @@
 	.text {
   	font-size: 2em;
   }
+}
+
+// CREATE PAGE
+.container_new_edit {
+	width: 40%;
+	margin: auto;
+	text-align: center;
 }

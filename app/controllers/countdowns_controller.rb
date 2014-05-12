@@ -1,5 +1,7 @@
 class CountdownsController < InheritedResources::Base
 
+	before_action :authenticate_user!, only: [:destroy, :create, :new, :edit, :update]
+
   def create
     @countdown = Countdown.create(countdown_params)
 
