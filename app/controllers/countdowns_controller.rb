@@ -3,7 +3,7 @@ class CountdownsController < InheritedResources::Base
 	before_action :authenticate_user!, only: [:destroy, :create, :new, :edit, :update]
 
   def create
-    @countdown = Countdown.create(countdown_params)
+    @countdown = current_user.countdowns.create(countdown_params)
 
 	  @countdown.save
 	  redirect_to @countdown
