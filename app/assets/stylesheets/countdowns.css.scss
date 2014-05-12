@@ -98,4 +98,39 @@
 	width: 40%;
 	margin: auto;
 	text-align: center;
+	input, textarea {
+		/* Firefox */
+		width: -moz-calc(100% - 20px);
+		/* WebKit */
+		width: -webkit-calc(100% - 20px);
+		/* Opera */
+		width: -o-calc(100% - 20px);
+		/* Standard */
+		width: calc(100% - 20px);
+		font-size: 1em;
+		margin-top: 10px;
+	}
+	input[type="submit"] {
+		width: 100%;
+	}
+	.field, .actions {
+		text-align: left;
+		margin-top: 30px;
+		.date_select {
+			text-align: center;
+		}
+	}
+	label {
+		margin-left: 5px;
+	}
+	select {
+		height: 35px;
+		margin-top: 10px;
+	}
+	#countdown_countdown_date_3i {
+		margin-right: 10px;
+	}
+	#countdown_countdown_date_4i {
+		margin-left: 10px;
+	}
 }

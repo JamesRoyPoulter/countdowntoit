@@ -12,20 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :title %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.label :description %><span class="optional"> (optional)</span><br>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :link %><br>
+    <%= f.label :link %><span class="optional"> (optional)</span><br>
     <%= f.text_field :link %>
   </div>
-  <div class="field">
+  <div class="field date_select">
     <%= f.label :countdown_date %><br>
-    <%= f.datetime_select :countdown_date %>
+    <%= f.datetime_select :countdown_date%>
   </div>
   <div class="actions">
     <%= f.submit %>

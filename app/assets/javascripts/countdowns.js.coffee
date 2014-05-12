@@ -2,6 +2,35 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+
+# // update the tag with id "countdown" every 1 second
+my_var_one = ()-> 
+	    # // find the amount of "seconds" between now and target
+	    current_date = new Date().getTime();
+	    seconds_left = (target_date - current_date) / 1000;
+	 
+	    # // do some time calculations
+	    days = parseInt(seconds_left / 86400);
+	    seconds_left = seconds_left % 86400;
+	     
+	    hours = parseInt(seconds_left / 3600);
+	    seconds_left = seconds_left % 3600;
+	     
+	    minutes = parseInt(seconds_left / 60);
+	    seconds = parseInt(seconds_left % 60);
+	     
+	    # // format countdown string + set tag value.
+	  
+	    days_span.innerHTML = '<div class="holder"><span class="number">' + days + '</span>' + '<span class="text">DAYS</span></div>';
+	    hours_span.innerHTML = '<div class="holder"><span class="number">' + hours + '</span>' + '<span class="text">HOURS</span></div>';
+	    minutes_span.innerHTML = '<div class="holder"><span class="number">' + minutes + '</span>' + '<span class="text">MINUTES</span></div>';
+	    secs_span.innerHTML = '<div class="holder"><span class="number">' + seconds + '</span>' + '<span class="text">SECONDS</span></div>';
+	    
+	  
+	    # //countdown.innerHTML = days + "d, " + hours + "h, "
+	   # // + minutes + "m, " + seconds + "s";  
+
+
 if $('#countdown').length
 	year = document.getElementById('year').innerHTML;
 	month = document.getElementById('month').innerHTML;
@@ -27,33 +56,23 @@ if $('#countdown').length
 	secs_span = document.createElement("SPAN");
 	secs_span.className = 'secs top_holder';
 	countdown.appendChild(secs_span);
-	 
-	# // update the tag with id "countdown" every 1 second
+	my_var_one()
 	setInterval ->
-	 
-	    # // find the amount of "seconds" between now and target
-	    current_date = new Date().getTime();
-	    seconds_left = (target_date - current_date) / 1000;
-	 
-	    # // do some time calculations
-	    days = parseInt(seconds_left / 86400);
-	    seconds_left = seconds_left % 86400;
-	     
-	    hours = parseInt(seconds_left / 3600);
-	    seconds_left = seconds_left % 3600;
-	     
-	    minutes = parseInt(seconds_left / 60);
-	    seconds = parseInt(seconds_left % 60);
-	     
-	    # // format countdown string + set tag value.
-	  
-	    days_span.innerHTML = '<div class="holder"><span class="number">' + days + '</span>' + '<span class="text">DAYS</span></div>';
-	    hours_span.innerHTML = '<div class="holder"><span class="number">' + hours + '</span>' + '<span class="text">HOURS</span></div>';
-	    minutes_span.innerHTML = '<div class="holder"><span class="number">' + minutes + '</span>' + '<span class="text">MINUTES</span></div>';
-	    secs_span.innerHTML = '<div class="holder"><span class="number">' + seconds + '</span>' + '<span class="text">SECONDS</span></div>';
-	    
-	  
-	    # //countdown.innerHTML = days + "d, " + hours + "h, "
-	   # // + minutes + "m, " + seconds + "s";  
-	 
-	, 1
+		my_var_one()
+	, 1000
+
+
+width = $('.date_select').width()
+day_width = (width-1)/2/3
+
+$('#countdown_countdown_date_1i').width(day_width)
+$('#countdown_countdown_date_2i').width(day_width)
+$('#countdown_countdown_date_3i').width(day_width)
+$('#countdown_countdown_date_4i').width(day_width)
+$('#countdown_countdown_date_5i').width(day_width)
+
+
+
+
+
+
