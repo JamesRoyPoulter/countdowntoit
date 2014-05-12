@@ -1,0 +1,43 @@
+body {
+	color: white;
+	background-color: #2C3E50;
+	font-family: helvetica;
+}
+
+.logo_short {
+	text-decoration: none;
+	color: #95a5a6;
+	text-align: center;
+	display: block !important;
+	position: fixed;
+	bottom: 35px;
+	margin-left: 48%;
+}
+
+.logo_long {
+	text-decoration: none;
+	color: #95a5a6;
+	text-align: center;
+	display: block;
+	margin-top: 80px;
+	letter-spacing: 8px;
+}
+
+// remove bullets
+.unstyled {
+	list-style-type: none;
+}
+
+// login logout styling
+.account {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	li {
+		display: inline-block;
+	}
+	a {
+		color: #95a5a6;
+		text-decoration: none;
+	}
+}

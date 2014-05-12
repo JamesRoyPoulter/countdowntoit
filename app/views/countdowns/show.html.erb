@@ -2,8 +2,12 @@
 <div id='container'>
 	<span id="countdown"></span>
 
+	<%= link_to(root_url, class: "logo_long") do %>
+	    C<i class="fa fa-clock-o"></i>UNTD<i class="fa fa-clock-o"></i>WNT<i class="fa fa-clock-o"></i>
+	  <% end %>
+
 	<div id='name'>
-		<p>UNTIL <%= @countdown.name %></p>
+		<%= @countdown.name.upcase %>
 	</div>
 
 	<div id='data'>
