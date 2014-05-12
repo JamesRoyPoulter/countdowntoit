@@ -1,8 +1,9 @@
+<div class="logogo">
+	<%= link_to(root_url, class: "logo_long") do %>
+    C<i class="fa fa-clock-o"></i>UNTD<i class="fa fa-clock-o"></i>WNT<i class="fa fa-clock-o"></i>
+  <% end %>
+</div>
+
 <% @countdowns.each do |countdown| %>
-<tr>
-	<td><%= link_to countdown.name, countdown.link %></td>
-</tr>
-<tr>
-<td><%= link_to 'Show', countdown %></td>
-</tr>
+	<p><%= countdown.name %></p>
 <% end %>

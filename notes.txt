@@ -24,4 +24,8 @@ dark red #c0392b
 
 TO DO
 
-- put edit button on show page, then only allow to view if current user matches the correct id
+- iterate through countdown, creating the data
+- iterate through countdown in js creating actual countdowns
+
+- tags
+- increment count, add field for total, and daily total

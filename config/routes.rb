@@ -11,7 +11,7 @@ SociaLoginRails::Application.routes.draw do
 
   match 'techpeaksdemoday' => 'countdowns#show', :via => [:get], :defaults => {:id => 6}
 
-  root :to => 'countdowns#show', :defaults => {:id => 6}
+  root :to => 'pages#landing'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

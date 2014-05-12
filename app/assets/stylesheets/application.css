@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require app
+ *= require landing
  *= require countdowns
  *= require scaffolds
  *= require font-awesome

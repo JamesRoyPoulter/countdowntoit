@@ -4,23 +4,19 @@ body {
 	font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 }
 
-.logo_short {
-	text-decoration: none;
-	color: #95a5a6;
-	text-align: center;
-	display: block !important;
-	position: fixed;
-	bottom: 35px;
-	margin-left: 48%;
-}
-
 .logo_long {
 	text-decoration: none;
-	color: #95a5a6;
+	color: white;
 	text-align: center;
 	display: block;
 	margin-top: 80px;
 	letter-spacing: 8px;
+	i {
+		color: #c0392b;
+	&:hover {
+		color: #e74c3c;
+	}
+	}
 }
 
 // GENERIC BUTTON
