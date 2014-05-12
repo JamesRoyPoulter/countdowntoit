@@ -20,6 +20,16 @@ class CountdownsController < InheritedResources::Base
     @second = date.strftime('%S')
   end
 
+  def update
+    @countdown = Countdown.find(params[:id])
+ 
+    if @countdown.update(countdown_params)
+      redirect_to @countdown
+    else
+      render 'edit'
+    end
+  end
+
   private
 
     def countdown_params

@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
+    @countdowns = current_user.countdowns
   end
 
   # GET /users/1/edit

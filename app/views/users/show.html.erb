@@ -3,6 +3,37 @@
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
+  <%= link_to 'Edit', edit_user_path(@user) %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Link</th>
+      <th>Countdown date</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<% if @countdowns.any? %>
+	    <% @countdowns.each do |countdown| %>
+	      <tr>
+	        <td><%= link_to countdown.name, countdown %></td>
+	        <td><%= countdown.description %></td>
+	        <td><%= countdown.link %></td>
+	        <td><%= countdown.countdown_date %></td>
+	        <td><%= link_to 'Show', countdown %></td>
+	      </tr>
+	    <% end %>
+    <% else %>
+    	<tr>
+    		<td colspan="4">You don't have any countdowns</td>
+    		<td colspan="1"><%= link_to 'create', new_countdown_path %> </td>
+    	</tr>
+    <% end %>
+  </tbody>
+</table>
+
