@@ -9,6 +9,8 @@ light green #1ABC9C
 
 concrete #95a5a6
 
+asbestos #7f8c8d
+
 light dark #34495e
 
 dark dark #2C3E50
@@ -16,3 +18,8 @@ dark dark #2C3E50
 light red #e74c3c
 
 dark red #c0392b
+
+
+TO DO
+
+- put edit button on show page, then only allow to view if current user matches the correct id
