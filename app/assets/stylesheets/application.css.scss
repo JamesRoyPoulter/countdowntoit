@@ -9,9 +9,11 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require app
- *= require landing
- *= require countdowns
- *= require scaffolds
- *= require font-awesome
  */
+
+@import "variables";
+@import "app";
+@import "landing";
+@import "countdowns";
+@import "scaffolds";
+@import "font-awesome";

@@ -3,12 +3,16 @@
 	<span id="countdown"></span>
 
 	<%= link_to(root_url, class: "logo_long") do %>
-	    C<i class="fa fa-clock-o"></i>UNTD<i class="fa fa-clock-o"></i>WNT<i class="fa fa-clock-o"></i>
-	  <% end %>
+    C<i class="fa fa-clock-o"></i>UNTD<i class="fa fa-clock-o"></i>WNT<i class="fa fa-clock-o"></i>
+  <% end %>
 
 	<div id='name'>
 		<%= @countdown.name.upcase %>
 	</div>
+
+	<%= button_to(new_countdown_path, method: "get", class: "button_create") do %>
+    <i class="fa fa-plus"></i>Create Countdown
+  <% end %>
 
 	<div id='data'>
 		<div id='year'><%= @year %></div>
