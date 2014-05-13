@@ -2,6 +2,19 @@
 <%= link_to 'Back', countdowns_path %>
 
 
+	hours_span = document.createElement("SPAN");
+	hours_span.className = 'hours top_holder';
+	countdown.appendChild(hours_span);
+	console.log(hours_span)
+	
+	# minutes_span = document.createElement("SPAN");
+	# minutes_span.className = 'minutes top_holder';
+	# countdown.appendChild(minutes_span);
+	
+	# secs_span = document.createElement("SPAN");
+	# secs_span.className = 'secs top_holder';
+	# countdown.appendChild(secs_span);
+
 50.63.202.40
 
 
@@ -29,3 +42,4 @@ TO DO
 
 - tags
 - increment count, add field for total, and daily total
+
