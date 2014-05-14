@@ -48,7 +48,7 @@
 
 #name {
 	margin-top: 40px;
-	color: $concrete;
+	color: #fff;
 	font-size: 2em;
 	letter-spacing: 2px;
 }
@@ -60,11 +60,13 @@
 	border-radius: 5px;
 	background-color: $light-red;
 	color: white;
-	position: absolute;
-	bottom: 0px;
 	&:hover {
 		background-color:$dark-red;
 	}
+}
+
+.create {
+	margin-left: 10px;
 }
 
 

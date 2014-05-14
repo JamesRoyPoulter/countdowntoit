@@ -10,10 +10,6 @@
 		<%= @countdown.name.upcase %>
 	</div>
 
-	<%= button_to(new_countdown_path, method: "get", class: "button_create") do %>
-    <i class="fa fa-plus"></i>Create Countdown
-  <% end %>
-
 	<div id='data'>
 		<div id='year'><%= @year %></div>
 		<div id='month'><%= @month %></div>
