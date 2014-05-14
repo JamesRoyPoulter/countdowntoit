@@ -43,3 +43,5 @@ TO DO
 - tags
 - increment count, add field for total, and daily total
 
+
+- amrk a countdown as private, then can't appear in public place

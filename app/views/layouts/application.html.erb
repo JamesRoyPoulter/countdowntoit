@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
       <%= yield %>
-  
+
   <ul class="unstyled account">
     <li><%= link_to content_tag(:i,nil, :class=>"fa fa-plus"), new_countdown_path %></li>
     <% if user_signed_in? %>

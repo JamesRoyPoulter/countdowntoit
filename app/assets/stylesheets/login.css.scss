@@ -1,0 +1,30 @@
+.login-container {
+	width: 80%;
+	margin: auto;
+}
+
+.devise-txt {
+	text-align: left;
+	margin-top: 20px;
+	.input {
+		margin-top: 20px;
+	}
+	input[type="submit"] {
+		margin-bottom: 30px;
+	}
+}
+
+.sign-up-btn {
+	margin: 20px auto;
+	display: block;
+	width: 50%;
+}
+
+.fa-facebook-square {
+	font-size: 3em;
+	text-align: left;
+}
+
+.existing-account {
+	margin-top: 20px;
+}
