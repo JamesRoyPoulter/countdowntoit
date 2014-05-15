@@ -12,6 +12,9 @@
 	input[type="submit"] {
 		margin-bottom: 30px;
 	}
+	.input .boolean {
+		width: inherit;
+	}
 }
 
 .sign-up-btn {
@@ -21,10 +24,60 @@
 }
 
 .fa-facebook-square {
-	font-size: 3em;
+	font-size: 5em;
 	text-align: left;
+	color: #3498db;
+	border-width: 2px;
+	border-color: white;
+	margin-bottom: 20px;
+	margin-top: 14px;
+	
 }
 
 .existing-account {
 	margin-top: 20px;
+}
+
+.container_sign {
+	width: 80% !important;
+}
+
+.sign-in-left, .sign-in-right, {
+	display: inline-block;
+	margin-top: 20px;
+	h2 {
+		margin-top: 20px;
+	}
+}
+
+.sign-in-create h2 {
+	margin-top: 10px;
+}
+
+.sign-in-right, .sign-in-fb, .sign-in-create {
+	background-color: #34495e;
+	border-radius: 5px;
+}
+
+.sign-in-fb, .sign-in-create {
+	padding: 20px;
+}
+
+.sign-in-left {
+	vertical-align: top;
+	width: 42.5%;
+	margin-right: 10px;
+}
+
+.sign-in-right {
+	padding: 20px;
+	width: 38%;
+	margin-left: 10px;
+}
+
+.sign-in-create {
+	margin-top: 20px;
+	.button_create {
+		margin-bottom: 0;
+	}
 }

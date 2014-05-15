@@ -1,29 +1,38 @@
-<div class="container_new_edit">
+<div class="container_sign">
 	<h2>Sign up</h2>
 
-	<%- if devise_mapping.omniauthable? %>
-		<%= link_to(omniauth_authorize_path(resource_name, resource_class.omniauth_providers[0]), class: "fb-icon") do %>
-	      <i class="fa fa-facebook-square"></i>
-		<% end %>
+	<div class="sign-in-left">
+		<div class="sign-in-fb">
+			<h2>With facebook</h2>
+			<%- if devise_mapping.omniauthable? %>
+				<%= link_to(omniauth_authorize_path(resource_name, resource_class.omniauth_providers[0]), class: "fb-icon") do %>
+					<i class="fa fa-facebook-square"></i>
+				<% end %>
+			<% end -%>
+		</div>
+<div class="sign-in-create">
+	<%- if controller_name != 'sessions' %>
+	<%= link_to "Sign in to existing account", new_session_path(resource_name) %><br />
 	<% end -%>
+</div>
+	</div>
 
-
-	<%= render "devise/shared/links" %>
+	<div class="sign-in-right">
+		<h2>With countdown</h2>
+		<%= render "devise/shared/links" %>
 
 	<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-	  <%= f.error_notification %>
+	<%= f.error_notification %>
 
-	  <div class="form-inputs devise-txt">
-	    <%= f.input :email, :required => true, :autofocus => true %>
-	    <%= f.input :password, :required => true %>
-	    <%= f.input :password_confirmation, :required => true %>
-	  </div>
+	<div class="form-inputs devise-txt">
+		<%= f.input :email, :required => true, :autofocus => true %>
+		<%= f.input :password, :required => true %>
+		<%= f.input :password_confirmation, :required => true %>
+	</div>
 
-	  <div class="form-actions devise-txt">
-	    <%= f.button :submit, "Create account" %>
-	  </div>
+	<div class="form-actions devise-txt">
+		<%= f.button :submit, "Create account" %>
+	</div>
 	<% end %>
-	<%- if controller_name != 'sessions' %>
-  <%= link_to "Sign in to existing account", new_session_path(resource_name) %><br />
-<% end -%>
+	</div>
 </div>
